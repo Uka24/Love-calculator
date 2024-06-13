@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love site</title>
+    <link rel="stylesheet" href="love.css">
+</head>
+
+<body>
+    <section>
+        <div class="main">
+            <h2>Love <span>Calculator</span></h2>
+            <p>Check your compatibilty</p>
+            <div id="names">
+                <input id="name1" type="text" placeholder="Enter your name">
+                <input id="name2" type="text" placeholder="Enter your crush's name">
+            </div>
+
+            <button id="loveBtn">Calculate🤍</button> <br>
+            <input type="text" id="result">
+
+        </div>
+    </section>
+
+
+
+    <script>
+        loveBtn.addEventListener ('click', function () {
+
+            let name1 = document.querySelector('#name1').value;
+            let name2 = document.querySelector('#name2').value;
+
+            let lovePercentage = Math.floor(Math.random() * 100) +1;
+
+           
+
+            let message = document.getElementById('result')
+
+            if (lovePercentage >= 60){
+                message.value = `${name1} and ${name2} have a ${lovePercentage}% You can start a wedding right away! `;
+            }else{
+                message.value = `${name1} and ${name2} have a ${lovePercentage}% You should go out for atleast a 100 date!`;
+            }
+
+})
+    
+ 
+        
+
+
+    </script>
+
+
+
+</body>
+
+</html>

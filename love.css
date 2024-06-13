@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(255, 0, 0, 0.068)), url(love.jpg);
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(black red);
+    color: white;
+}
+
+.main{
+    width: 50%;
+    height: fit-content;
+    border: 4px solid red;
+    padding: 15px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    border-image: linear-gradient(5deg, red, blue, yellow);
+    border-image-slice: 1;
+}
+
+h2{
+    font-size: 4em;
+    text-align: center;
+    color: black;
+    outline-color: red;
+
+    span{
+        color: red;
+    }
+}
+p{
+    text-align: center;
+    margin: 0px 20px;
+    color: white;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+input{
+    padding: 10px;
+    font-size: 18px;
+}
+button{
+    padding: 25px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: red;
+}
+#result{
+    width: 90%;
+    border: 1px solid black;
+    font-size: 15px;
+    
+}
